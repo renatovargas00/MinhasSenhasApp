@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        if(usuario.getText().toString().equals(Hawk.get("usuario")) &&
+        if(usuario.getText().toString() == Hawk.get("usuario") &&
             senha.getText().toString().equals(Hawk.get("senha"))){
 
             Intent intent = new Intent(this, ListasSenhasActivity.class);
